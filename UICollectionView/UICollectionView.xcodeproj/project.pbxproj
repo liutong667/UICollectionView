@@ -15,6 +15,9 @@
 		A85BFD3A20109566002387EE /* LTGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A85BFD3920109566002387EE /* LTGroupViewController.m */; };
 		A85BFD3C2010989B002387EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A85BFD3B2010989B002387EE /* Main.storyboard */; };
 		A85BFD3F20109A88002387EE /* LTCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A85BFD3E20109A88002387EE /* LTCollectionViewFlowLayout.m */; };
+		A884BD602014971200732E15 /* NSDictionary+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = A884BD582014971200732E15 /* NSDictionary+Ex.m */; };
+		A884BD612014971200732E15 /* NSObject+SafeString.m in Sources */ = {isa = PBXBuildFile; fileRef = A884BD5A2014971200732E15 /* NSObject+SafeString.m */; };
+		A884BD622014971200732E15 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = A884BD5C2014971200732E15 /* UIColor+Hex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,17 @@
 		A85BFD3B2010989B002387EE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A85BFD3D20109A88002387EE /* LTCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		A85BFD3E20109A88002387EE /* LTCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		A884BD542014971200732E15 /* lt_common_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lt_common_lib.h; sourceTree = "<group>"; };
+		A884BD562014971200732E15 /* lt_ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lt_ex.h; sourceTree = "<group>"; };
+		A884BD572014971200732E15 /* NSDictionary+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Ex.h"; sourceTree = "<group>"; };
+		A884BD582014971200732E15 /* NSDictionary+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Ex.m"; sourceTree = "<group>"; };
+		A884BD592014971200732E15 /* NSObject+SafeString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SafeString.h"; sourceTree = "<group>"; };
+		A884BD5A2014971200732E15 /* NSObject+SafeString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SafeString.m"; sourceTree = "<group>"; };
+		A884BD5B2014971200732E15 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		A884BD5C2014971200732E15 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		A884BD5E2014971200732E15 /* lt_constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lt_constants.h; sourceTree = "<group>"; };
+		A884BD5F2014971200732E15 /* lt_macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lt_macros.h; sourceTree = "<group>"; };
+		A884BD632014979B00732E15 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +78,7 @@
 		A85BFD1D2010924D002387EE /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				A884BD532014971200732E15 /* base */,
 				A85BFD3720109468002387EE /* 群聊 */,
 				A85BFD34201093D6002387EE /* TableViewController.h */,
 				A85BFD35201093D6002387EE /* TableViewController.m */,
@@ -74,6 +89,7 @@
 				A85BFD292010924D002387EE /* LaunchScreen.storyboard */,
 				A85BFD2C2010924D002387EE /* Info.plist */,
 				A85BFD2D2010924D002387EE /* main.m */,
+				A884BD632014979B00732E15 /* PrefixHeader.pch */,
 			);
 			path = UICollectionView;
 			sourceTree = "<group>";
@@ -87,6 +103,39 @@
 				A85BFD3E20109A88002387EE /* LTCollectionViewFlowLayout.m */,
 			);
 			path = "群聊";
+			sourceTree = "<group>";
+		};
+		A884BD532014971200732E15 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				A884BD542014971200732E15 /* lt_common_lib.h */,
+				A884BD552014971200732E15 /* lt_ex */,
+				A884BD5D2014971200732E15 /* lt_macros */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		A884BD552014971200732E15 /* lt_ex */ = {
+			isa = PBXGroup;
+			children = (
+				A884BD562014971200732E15 /* lt_ex.h */,
+				A884BD572014971200732E15 /* NSDictionary+Ex.h */,
+				A884BD582014971200732E15 /* NSDictionary+Ex.m */,
+				A884BD592014971200732E15 /* NSObject+SafeString.h */,
+				A884BD5A2014971200732E15 /* NSObject+SafeString.m */,
+				A884BD5B2014971200732E15 /* UIColor+Hex.h */,
+				A884BD5C2014971200732E15 /* UIColor+Hex.m */,
+			);
+			path = lt_ex;
+			sourceTree = "<group>";
+		};
+		A884BD5D2014971200732E15 /* lt_macros */ = {
+			isa = PBXGroup;
+			children = (
+				A884BD5E2014971200732E15 /* lt_constants.h */,
+				A884BD5F2014971200732E15 /* lt_macros.h */,
+			);
+			path = lt_macros;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,9 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A884BD612014971200732E15 /* NSObject+SafeString.m in Sources */,
 				A85BFD2E2010924D002387EE /* main.m in Sources */,
 				A85BFD36201093D6002387EE /* TableViewController.m in Sources */,
 				A85BFD3F20109A88002387EE /* LTCollectionViewFlowLayout.m in Sources */,
+				A884BD602014971200732E15 /* NSDictionary+Ex.m in Sources */,
+				A884BD622014971200732E15 /* UIColor+Hex.m in Sources */,
 				A85BFD3A20109566002387EE /* LTGroupViewController.m in Sources */,
 				A85BFD202010924D002387EE /* AppDelegate.m in Sources */,
 			);
@@ -292,6 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7L8859JS3T;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/UICollectionView/PrefixHeader.pch";
 				INFOPLIST_FILE = UICollectionView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alwaycoding.www.UICollectionView;
@@ -306,6 +359,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7L8859JS3T;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/UICollectionView/PrefixHeader.pch";
 				INFOPLIST_FILE = UICollectionView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alwaycoding.www.UICollectionView;
